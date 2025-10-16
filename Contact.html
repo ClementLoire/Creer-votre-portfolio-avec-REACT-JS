@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez John Doe - Développeur Web à Lyon pour vos projets web">
+    <title>Contact - John Doe</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS.css">
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">JOHN DOE</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="Services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="Réalisation.html">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="Mentions Légales.html">Mentions Légales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Contact -->
+    <section class="page-section" style="padding-top: 100px; min-height: 100vh;">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h1 class="fw-bold display-4">ME CONTACTER</h1>
+                <p class="lead">Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</p>
+            </div>
+            
+            <div class="row">
+                <!-- Formulaire de contact -->
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-4">Formulaire de contact</h3>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Votre adresse email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" id="telephone" placeholder="Votre numéro de téléphone" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="sujet" placeholder="Sujet" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" rows="5" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                    <div id="alertContainer"></div>
+                </div>
+                
+                <!-- Coordonnées -->
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-4">Mes coordonnées</h3>
+                    <div class="mb-3">
+                        <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                        <strong>Adresse :</strong> 40 Rue Laure Diebold, 69009 Lyon, France
+                    </div>
+                    <div class="mb-3">
+                        <i class="bi bi-telephone-fill text-primary me-2"></i>
+                        <strong>Téléphone :</strong> 06 20 30 40 50
+                    </div>
+                    <div class="mb-4">
+                        <i class="bi bi-envelope-fill text-primary me-2"></i>
+                        <strong>Email :</strong> john.doe@gmail.com
+                    </div>
+                    
+                    <!-- Google Maps -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.626965754607!2d4.796403976617905!3d45.778661471072626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb65edac5b3f%3A0xe01c47049cb2e2b9!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon!5e0!3m2!1sfr!2sfr!4v1645180449739!5m2!1sfr!2sfr" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Localisation John Doe">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">John Doe</h5>
+                    <p>40 Rue Laure Diebold<br>69009 Lyon, France<br>Téléphone : 06 20 30 40 50</p>
+                    <div class="social-links">
+                        <a href="https://github.com/github-john-doe" target="_blank" rel="noopener nofollow" class="text-light me-3">
+                            <i class="bi bi-github fs-4"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener nofollow" class="text-light me-3">
+                            <i class="bi bi-twitter fs-4"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener nofollow" class="text-light">
+                            <i class="bi bi-linkedin fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Liens utiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none footer-link">Accueil</a></li>
+                        <li><a href="Services.html" class="text-light text-decoration-none footer-link">Services</a></li>
+                        <li><a href="Réalisation.html" class="text-light text-decoration-none footer-link">Réalisations</a></li>
+                        <li><a href="Contact.html" class="text-light text-decoration-none footer-link">Me contacter</a></li>
+                        <li><a href="Mentions Légales.html" class="text-light text-decoration-none footer-link">Mentions légales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Mes dernières réalisations</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="realisations.html" class="text-light text-decoration-none footer-link">Fresh Food</a></li>
+                        <li><a href="realisations.html" class="text-light text-decoration-none footer-link">Restaurant Akira</a></li>
+                        <li><a href="realisations.html" class="text-light text-decoration-none footer-link">Espace bien-être</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; Designed by John Doe</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script pour la validation du formulaire -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Récupérer les valeurs
+            const nom = document.getElementById('nom').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const telephone = document.getElementById('telephone').value.trim();
+            const sujet = document.getElementById('sujet').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            // Validation
+            if (!nom || !email || !telephone || !sujet || !message) {
+                showAlert('Veuillez remplir tous les champs obligatoires.', 'danger');
+                return;
+            }
+            
+            // Validation email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showAlert('Veuillez entrer une adresse email valide.', 'danger');
+                return;
+            }
+            
+            // Succès
+            showAlert('Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.', 'success');
+            document.getElementById('contactForm').reset();
+        });
+        
+        function showAlert(message, type) {
+            const alertContainer = document.getElementById('alertContainer');
+            alertContainer.innerHTML = `
+                <div class="alert alert-${type} alert-dismissible fade show mt-3" role="alert">
+                    ${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            `;
+            
+            // Supprimer l'alerte après 5 secondes
+            setTimeout(() => {
+                alertContainer.innerHTML = '';
+            }, 5000);
+        }
+    </script>
+
+</body>
+</html>

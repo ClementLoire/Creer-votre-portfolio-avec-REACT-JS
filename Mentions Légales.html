@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Mentions légales du site de John Doe - Développeur Web">
+    <title>Mentions Légales - John Doe</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS.css">
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">JOHN DOE</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Réalisation.html">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Mentions Légales -->
+    <main>
+        <section class="container py-5 mt-5">
+            <div class="text-center mb-5">
+                <h1 class="fw-bold display-4">MENTIONS LÉGALES</h1>
+            </div>
+            
+            <div class="accordion" id="legalAccordion">
+                <!-- Éditeur du site -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseOne" 
+                                aria-expanded="true" 
+                                aria-controls="collapseOne">
+                            Éditeur du site
+                        </button>
+                    </h2>
+                    <div id="collapseOne" 
+                         class="accordion-collapse collapse show" 
+                         aria-labelledby="headingOne" 
+                         data-bs-parent="#legalAccordion">
+                        <div class="accordion-body">
+                            <p><strong>John Doe</strong></p>
+                            <p class="mb-1">40 Rue Laure Diebold</p>
+                            <p class="mb-1">69009 Lyon, France</p>
+                            <p class="mb-1">Téléphone : 10 20 30 40 50</p>
+                            <p class="mb-0">Email : <a href="mailto:john.doe@gmail.com">john.doe@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hébergeur -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseTwo" 
+                                aria-expanded="false" 
+                                aria-controls="collapseTwo">
+                            Hébergeur
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" 
+                         class="accordion-collapse collapse" 
+                         aria-labelledby="headingTwo" 
+                         data-bs-parent="#legalAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Always Data</strong></p>
+                            <p class="mb-1">91 rue du Faubourg Saint Honoré</p>
+                            <p class="mb-1">75008 Paris</p>
+                            <p class="mb-0">Site web : <a href="https://www.alwaysdata.com" target="_blank" rel="noopener">www.alwaysdata.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Crédits -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseThree" 
+                                aria-expanded="false" 
+                                aria-controls="collapseThree">
+                            Crédits
+                        </button>
+                    </h2>
+                    <div id="collapseThree" 
+                         class="accordion-collapse collapse" 
+                         aria-labelledby="headingThree" 
+                         data-bs-parent="#legalAccordion">
+                        <div class="accordion-body">
+                            <p class="mb-3">Ce site a été réalisé par John Doe, étudiant au <a href="https://www.centre-europeen-formation.fr" target="_blank" rel="noopener">Centre Européen de Formation</a>.</p>
+
+                            <p><strong>Images :</strong></p>
+                            <p class="mb-3">Les images libres de droit sont issues du site <a href="https://pixabay.com" target="_blank" rel="noopener">Pixabay</a>.</p>
+                            
+                            <p><strong>Favicon :</strong></p>
+                            <p class="mb-0">Le favicon du site a été fournie par <a href="https://www.flaticon.com/free-icons/john-doe" target="_blank" rel="noopener">John doe icons created by Freepik - Flaticon</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Colonne 1 : Coordonnées -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3">John Doe</h5>
+                    <address class="mb-3">
+                        <p class="mb-1">40 Rue Laure Diebold</p>
+                        <p class="mb-1">69009 Lyon, France</p>
+                        <p class="mb-3">10 20 30 40 50</p>
+                    </address>
+                    <div class="social-links">
+                        <a href="https://github.com/github-john-doe" 
+                           target="_blank" 
+                           rel="noopener nofollow" 
+                           class="text-light me-3" 
+                           aria-label="GitHub">
+                            <i class="bi bi-github fs-4"></i>
+                        </a>
+                        <a href="https://twitter.com" 
+                           target="_blank" 
+                           rel="noopener nofollow" 
+                           class="text-light me-3" 
+                           aria-label="Twitter">
+                            <i class="bi bi-twitter fs-4"></i>
+                        </a>
+                        <a href="https://linkedin.com" 
+                           target="_blank" 
+                           rel="noopener nofollow" 
+                           class="text-light" 
+                           aria-label="LinkedIn">
+                            <i class="bi bi-linkedin fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Colonne 2 : Liens utiles -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3">Liens utiles</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-light text-decoration-none footer-link">Accueil</a></li>
+                        <li class="mb-2"><a href="Services.html" class="text-light text-decoration-none footer-link">Services</a></li>
+                        <li class="mb-2"><a href="Réalisation.html" class="text-light text-decoration-none footer-link">Réalisations</a></li>
+                        <li class="mb-2"><a href="Contact.html" class="text-light text-decoration-none footer-link">Me contacter</a></li>
+                        <li class="mb-2"><a href="Mentions Légales.html" class="text-light text-decoration-none footer-link">Mentions légales</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne 3 : Dernières réalisations -->
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Mes dernières réalisations</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="Réalisation.html" class="text-light text-decoration-none footer-link">Fresh food</a></li>
+                        <li class="mb-2"><a href="Réalisation.html" class="text-light text-decoration-none footer-link">Restaurant Akira</a></li>
+                        <li class="mb-2"><a href="Réalisation.html" class="text-light text-decoration-none footer-link">Espace bien-être</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            <div class="text-center">
+                <p class="mb-0">&copy; Designed by John Doe</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
